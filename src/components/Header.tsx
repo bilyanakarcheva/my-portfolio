@@ -28,10 +28,10 @@ function Header() {
           <BsPersonVcardFill className="mr-2" />
           About
           </NavLink>
-        <NavLink to="/contacts"
+        <NavLink to="/contact"
           className="text-2xl font-bold text-accent flex items-center">
           <RiContactsBookFill className="mr-2" />
-          Contacts
+          Contact
         </NavLink>
       </div>
     </div>
