@@ -1,7 +1,7 @@
 import photo from '../../assets/photo_Bilyana.jpg';
 function Home() {
   return (
-    <div className="bg-base-300 w-full h-3/4 rounded-lg p-20">
+    <div id="home" className="bg-base-300 w-full h-3/4 rounded-lg p-20">
     <div className="flex flex-row justify-between p-10 gap-10 h-full">
       <div className="flex flex-col items-start gap-3">
         <h1 className="text-4xl text-left font-bold">Hi, I'm Bilyana Karcheva 👋</h1>
