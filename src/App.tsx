@@ -8,6 +8,7 @@ import Portfolio from './views/Portfolio/Portfolio'
 import Contact from './views/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import About from './views/About/About'
+import Technologies from './views/Technologies/Technologies'
 
 function App() {
 
@@ -16,12 +17,13 @@ function App() {
         {/* <div className="fixed top-0 -z-10 h-full w-full">
           <div className="relative h-full w-full bg-neutral-900"><div className="absolute inset-0 bg-fuchsia-400 bg-[size:20px_20px] opacity-20 blur-[100px]"></div></div>
         </div> */}
-        <div className="mx-auto flex flex-col">
+        <div className="bg-base-300 mx-auto flex flex-col">
           <Header />
           <Hero />
+          <About />
+          <Technologies />
           <Certificates />
           <Portfolio />
-          <About />
           <Contact />
           <Footer />
         </div>
