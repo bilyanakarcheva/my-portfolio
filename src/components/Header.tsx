@@ -9,14 +9,14 @@ import { Link } from "react-scroll";
 
 function Header() {
   return (
-    <nav id="top" className="bg-primary/70 flex items-center justify-between py-12">
+    <nav id="top" className="bg-primary/80 border-b border-primary flex items-center justify-between py-12">
       <div className="px-10 flex flex-shrink-0 items-center">
       <Link
         to="top"
         smooth={true}
         duration={1000}
         spy={true}
-        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-secondary"
+        className="text-3xl font-bold text-accent flex items-center cursor-pointer hover:text-neutral"
         style={{ fontFamily: 'Charmonman, cursive'}}>
         BK
       </Link>
@@ -26,7 +26,7 @@ function Header() {
         to="certificates"
         smooth={true}
         duration={1000}
-        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-secondary">
+        className="text-2xl text-accent font-bold flex items-center cursor-pointer hover:text-neutral">
         <PiCertificateFill className="mr-2" />
         Certificates
         </Link>
@@ -34,7 +34,7 @@ function Header() {
         to="portfolio"
         smooth={true}
         duration={1000}
-        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-secondary">
+        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-neutral">
         <FaClipboardList className="mr-2" />
         Portfolio
         </Link>
@@ -42,7 +42,7 @@ function Header() {
         to="about"
         smooth={true}
         duration={1000}
-        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-secondary">
+        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-neutral">
         <BsPersonVcardFill className="mr-2" />
         About
         </Link>
@@ -50,7 +50,7 @@ function Header() {
         to="contact"
         smooth={true}
         duration={1000}
-        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-secondary">
+        className="text-2xl font-bold text-accent flex items-center cursor-pointer hover:text-neutral">
         <RiContactsBookFill className="mr-2" />
         Contact
         </Link>
