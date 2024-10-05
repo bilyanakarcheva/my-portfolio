@@ -1,15 +1,32 @@
-import photo from '../../assets/photo_Bilyana.jpg';
+import myPhoto from '../../assets/photo_Bilyana.jpg';
+import { HERO_CONTENT } from '../../constants';
 function Hero() {
   return (
-    <div id="home" className="bg-base-300 w-full h-3/4 rounded-t-lg p-20">
-      <div className="flex flex-row justify-between p-10 gap-10 h-full">
-        <div className="flex flex-col items-start gap-3">
-          <h1 className="text-4xl text-left font-bold">Hi, I'm Bilyana Karcheva 👋</h1>
-          <h2 className="text-3xl text-left text-accent font-bold">Junior Software Developer</h2>
-          <p className="text-2xl text-left mt-4">I am a passionate software developer who recently graduated from the Alpha JavaScript program in Telerik Academy, eager to dive into real-world programming challenges. With a solid foundation in modern web technologies and a keen eye for detail, I'm excited to turn ideas into impactful digital experiences.</p>
+    <div id="hero" className="border-b border-base-200 p-20 lg:mb-35">
+      <div className="flex flex-wrap">
+        <div className="w-full lg:w-1/2">
+          <div className="flex flex-col items-center lg:items-start">
+            <h1 className="pb-16 text-6xl text-left font-thin text-accent tracking-tight lg:mt-16 lg:text-8xl">
+              Bilyana Karcheva
+            </h1>
+            <span className="bg-gradient-to-r from-orange-400 via-red-400 to-amber-400 text-4xl text-left font-bold bg-clip-text tracking-tight text-transparent">
+              Junior Software Developer
+            </span>
+            <p className="my-2 max-w-xl py-6 font-light tracking-tight text-2xl text-left">
+              {HERO_CONTENT}
+            </p>
+          </div>
         </div>
-        <img className="h-96 w-72 rounded-lg " src={photo} alt="photo">
-        </img>
+        <div className='w-full lg:w-1/2'>
+          <div className="flex justify-end">
+            <img 
+              className="rounded-xl max-w-full max-h-full" 
+              src={myPhoto} 
+              alt="Bilyana Karcheva" 
+              style={{ maxWidth: '450px', maxHeight: '600px' }}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
