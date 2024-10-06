@@ -1,5 +1,5 @@
 import aboutImg from '../../assets/about.png'
-import { ABOUT_TEXT } from '../../constants';
+import { ABOUT_TEXT } from '../../constants/constants';
 function About() {
     return (
         <div id="about" className="border-b border-base-200 flex flex-col w-full h-auto min-h-screen p-20">
