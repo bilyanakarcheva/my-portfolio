@@ -1,5 +1,5 @@
 import myPhoto from '../../assets/photo_Bilyana.jpg';
-import { HERO_CONTENT } from '../../constants';
+import { HERO_CONTENT } from '../../constants/constants';
 function Hero() {
   return (
     <div id="hero" className="border-b border-base-200 p-20 lg:mb-35">
@@ -17,15 +17,20 @@ function Hero() {
             </p>
           </div>
         </div>
-        <div className='w-full lg:w-1/2'>
-          <div className="flex justify-end">
-            <img 
+        {/* <div className="w-full lg:w-1/2 ">
+          <div className="flex items-center justify-center">
+            <img className="rounded-xl" src={myPhoto} alt="about"></img>
+          </div>
+        </div> */}
+        <div className='w-full flex flex-wrap justify-center lg:w-1/2'>
+            <div className="flex lg:max-w-lg lg:p-8">
+              <img 
               className="rounded-xl max-w-full max-h-full" 
               src={myPhoto} 
               alt="Bilyana Karcheva" 
-              style={{ maxWidth: '450px', maxHeight: '600px' }}
-            />
-          </div>
+              style={{ maxHeight: '600px'}}
+              />
+            </div>
         </div>
       </div>
     </div>
