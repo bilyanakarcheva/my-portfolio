@@ -9,6 +9,9 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { SiJest } from "react-icons/si";
+import { SiEslint } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+import { TbBrandVite } from "react-icons/tb";
 
 const Technologies = () => {
     return (
@@ -47,6 +50,12 @@ const Technologies = () => {
                 </div>
                 <div className="rounded-2xl border-4 border-base-100 p-4">
                     <SiJest className="text-7xl text-react text-red-900/85" />
+                </div>
+                <div className="rounded-2xl border-4 border-base-100 p-4">
+                    <SiEslint className="text-7xl text-react text-indigo-600" />
+                </div>
+                <div className="rounded-2xl border-4 border-base-100 p-4">
+                    <SiVite className="text-7xl text-react text-violet-600/90" />
                 </div>
             </div>
         </div>
