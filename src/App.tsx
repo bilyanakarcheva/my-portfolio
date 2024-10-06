@@ -4,7 +4,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './views/Hero/Hero'
 import Certificates from './views/Certificates/Certificates'
-import Portfolio from './views/Portfolio/Portfolio'
+import Projects from './views/Projects/Projects'
 import Contact from './views/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import About from './views/About/About'
@@ -22,8 +22,8 @@ function App() {
           <Hero />
           <About />
           <Technologies />
+          <Projects />
           <Certificates />
-          <Portfolio />
           <Contact />
           <Footer />
         </div>
