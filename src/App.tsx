@@ -23,7 +23,7 @@ function App() {
           <About />
           <Technologies />
           <Projects />
-          <Certificates />
+          {/* <Certificates /> */}
           <Contact />
           <Footer />
         </div>
