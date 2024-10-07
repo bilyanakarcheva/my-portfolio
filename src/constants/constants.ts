@@ -16,6 +16,7 @@ export const PROJECTS = [
         image: Project3,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        github: '#',
         link: '#'
     },
     {
@@ -23,6 +24,7 @@ export const PROJECTS = [
         image: Project2,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        github: '#',
         link: '#'
     },
     {
@@ -30,6 +32,32 @@ export const PROJECTS = [
         image: Project1,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        github: '#',
         link: '#'
     }
 ];
+
+export const NAV_ITEMS = [
+    {
+        name: 'Home',
+        href: '#hero'
+    },
+    {
+        name: 'About',
+        href: '#about'
+    },
+    {
+        name: 'Projects',
+        href: '#projects'
+    },
+    {
+        name: 'Contact',
+        href: '#contact'
+    }
+];
+
+export const CONTACTS = {
+    phone: '+359 878 798 207',
+    email: 'karcheva.bilyana@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/bilyana-karcheva-a45b26105/'
+};
