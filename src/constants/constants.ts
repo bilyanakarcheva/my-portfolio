@@ -12,26 +12,26 @@ in Telerik Academy, eager to dive into real-world programming challenges. With a
 
 export const PROJECTS = [
     {
-        title: 'Project 3',
+        title: '№1 Sports Events Calendar',
         image: Project3,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        description: 'Introducing Sports Calendar: a user-friendly app designed to unite sports enthusiasts in one convenient platform. Here, users can browse all upcoming sports events and add the ones they are interested in to their personal calendar, ensuring they never miss a moment. Users can also create contact lists and invite friends to the events they\'re participating in, sharing the thrill together. And for those who want to take the lead, users can create their own events—either public for anyone to join or private for just the friends they invite.',
+        technologies: ['JavaScript', 'React', 'Firebase', 'TailwindCSS', 'DaisyUI', 'API', 'ESLint', 'Git'],
         github: '#',
         link: '#'
     },
     {
-        title: 'Project 2',
+        title: 'Home DIY Forum',
         image: Project2,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        description: 'The Home DIY Forum web app is a vibrant community platform for home improvement enthusiasts. Users can create posts to share their DIY projects, seek advice, and exchange ideas. The app features a robust commenting system that allows users to engage in discussions, offer tips, and provide feedback. Members can upvote or downvote posts and comments, ensuring the most helpful and popular content rises to the top. Join the Home DIY Forum to connect with like-minded individuals and get inspired for your next home project!',
+        technologies: ['JavaScript', 'React', 'HTML', 'CSS', 'Firebase', 'ESLint', 'Git'],
         github: '#',
         link: '#'
     },
     {
-        title: 'Project 1',
+        title: 'Giphy Single Page App',
         image: Project1,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        technologies: ['React', 'TypeScript', 'TailwindCSS'],
+        description: 'The Home DIY Forum web app is a vibrant community platform for home improvement enthusiasts. Users can create posts to share their DIY projects, seek advice, and exchange ideas. The app features a robust commenting system that allows users to engage in discussions, offer tips, and provide feedback. Members can upvote or downvote posts and comments, ensuring the most helpful and popular content rises to the top. Join the Home DIY Forum to connect with like-minded individuals and get inspired for your next home project!',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'API', 'ESLint', 'Git'],	
         github: '#',
         link: '#'
     }
