@@ -2,7 +2,7 @@ import { FaGithubSquare, FaGithub } from "react-icons/fa";
 
 function Footer() {
     return (
-        <footer className="footer footer-center bg-primary/80 border-t border-primary p-4 flex flex-row justify-between ">
+        <footer className="footer footer-center bg-primary border-t border-primary p-4 flex flex-row justify-between ">
             <p>© 2024 Bilyana Karcheva</p>
             <div className="flex gap-4">
                 <FaGithubSquare size="2em" className="text-accent" />
