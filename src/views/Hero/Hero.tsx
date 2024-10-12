@@ -14,7 +14,7 @@ function Hero() {
   });
 
   return (
-    <div id="hero" className="border-b border-base-200 p-20 lg:mb-35">
+    <div id="hero" className="flex flex-col w-full justify-center h-auto items-center border-b border-base-200 p-20 mt-20 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -41,8 +41,8 @@ function Hero() {
             </motion.p>
           </div>
         </div>
-        <div className='w-full flex flex-wrap justify-center lg:w-1/2'>
-          <div className="flex lg:max-w-lg lg:m-8">
+        <div className='w-full flex lg:pl-12 lg:w-1/2'>
+          <div className="lg:max-w-lg lg:m-8">
             <motion.img
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
