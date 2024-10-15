@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 function About() {
     return (
-        <div id="about" className="border-b border-base-200 flex flex-col w-full h-auto min-h-screen p-20">
+        <div id="about" className="border-b border-base-200 flex flex-col w-full h-auto min-h-screen pb-5 px-5 lg:p-20">
             <motion.h1
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: -100 }}
                 transition={{ duration: 1 }}
-                className="text-4xl font-bold text-accent text-center my-20">
+                className="text-4xl font-bold text-accent text-center my-12 lg:my-20">
                 About
                 <span className="text-accent/70"> Me</span>
             </motion.h1>
