@@ -61,6 +61,22 @@ html {
   color: #fff;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinking-karet {
+  animation: blink 1s step-end infinite;
+}
+
 /* .charmonman-bold {
   font-family: "Charmonman", serif;
   font-weight: 700;
