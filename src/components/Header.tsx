@@ -37,10 +37,10 @@ function Header() {
   };
 
   return (
-    <nav id="top" className={`${scrolled ? 'bg-primary/80' : 'bg-primary border-b border-primary'
-      } fixed top-0 w-full items-center py-10 px-20 z-50`}>
-      <div className="flex justify-between  md:hidden sm:hidden">
-        <div className="px-10 flex flex-wrap items-center">
+    <nav id="top" className={`${scrolled ? 'bg-primary/80' : 'bg-primary'
+      } fixed top-0 w-full items-center lg:py-10 py-7 px-20 z-50`}>
+      <div className="lg:flex lg:flex-wrap justify-between hidden">
+        <div className="px-10 flex flex-wrap gap-10 items-center">
           <Link
             to="hero"
             smooth={true}
@@ -53,8 +53,7 @@ function Header() {
           >
             BK
           </Link>
-        </div>
-        <div className="pr-10 flex flex-wrap gap-7 text-2xl">
+          <div className=" flex flex-wrap gap-7 text-2xl">
           <Link
             to="about"
             smooth={true}
@@ -96,6 +95,8 @@ function Header() {
             Contact
           </Link>
         </div>
+        </div>
+
         <div className="flex justify-between gap-2 pl-4">
           <div className="flex gap-2">
             <a href="https://github.com/bilyanakarcheva" target="_blank" rel="noopener noreferrer">
@@ -113,41 +114,85 @@ function Header() {
         <button onClick={toggleMenu} className="text-accent text-3xl">
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
+        {menuOpen && (
+          <div className={`${scrolled ? 'bg-primary/80' : 'bg-primary'
+      } absolute top-16 left-0 w-full flex flex-col items-center gap-7 text-2xl py-4`}>
+            <Link
+              to="hero"
+              smooth={true}
+              duration={1000}
+              offset={-100}
+              spy={true}
+              className="text-5xl text-accent flex items-center cursor-pointer font-extrabold"
+              style={{ fontFamily: 'Shadows Into Light', fontWeight: 'bolder' }}
+              onClick={() => {
+                handleActiveLink('hero')
+                setMenuOpen(false)
+              }}
+            >
+              BK
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={1000}
+              offset={-80}
+              className={`${activeLink === 'about' ? 'text-neutral-500' : 'text-accent'
+                } text-2xl font-bold flex items-center cursor-pointer`}
+              onClick={() => {
+                handleActiveLink('about');
+                setMenuOpen(false);
+              }}
+            >
+              <BsPersonVcardFill className="mr-2" />
+              About
+            </Link>
+            <Link
+              to="technologies"
+              smooth={true}
+              duration={1000}
+              offset={-80}
+              className={`${activeLink === 'technologies' ? 'text-neutral-500' : 'text-accent'
+                } text-2xl font-bold flex items-center cursor-pointer`}
+              onClick={() => {
+                handleActiveLink('technologies');
+                setMenuOpen(false);
+              }}
+            >
+              <FaGear className="mr-2" />
+              Technologies
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={1000}
+              offset={-100}
+              className={`${activeLink === 'projects' ? 'text-neutral-500' : 'text-accent '} text-2xl font-bold flex items-center cursor-pointer hover:text-neutral-500`}
+              onClick={() => {
+                setActiveLink('projects')
+                setMenuOpen(false)
+              }}
+            >
+              <FaClipboardList className="mr-2" />
+              Projects
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={1000}
+              offset={-100}
+              className={`${activeLink === 'contact' ? 'text-neutral-500' : 'text-accent '} text-2xl font-bold flex items-center cursor-pointer hover:text-neutral-500`}
+              onClick={() => {
+              setActiveLink('contact')
+              setMenuOpen(false)
+              }}
+              >
+              <RiContactsBookFill className="mr-2" />
+              Contact
+            </Link>
+          </div>
+        )}
       </div>
-      {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-primary flex flex-col items-center gap-7 text-2xl py-4">
-          <Link
-            to="about"
-            smooth={true}
-            duration={1000}
-            offset={-80}
-            className={`${activeLink === 'about' ? 'text-neutral-500' : 'text-accent'
-              } text-2xl font-bold flex items-center cursor-pointer hover:text-neutral-500`}
-            onSetActive={() => {
-              setActiveLink('about');
-              setMenuOpen(false);
-            }}
-          >
-            <BsPersonVcardFill className="mr-2" />
-            About
-          </Link>
-          <Link
-            to="technologies"
-            smooth={true}
-            duration={1000}
-            offset={-80}
-            className={`${activeLink === 'technologies' ? 'text-neutral-500' : 'text-accent'
-              } text-2xl font-bold flex items-center cursor-pointer hover:text-neutral-500`}
-            onSetActive={() => {
-              setActiveLink('technologies');
-              setMenuOpen(false);
-            }}
-          >
-            Technologies
-          </Link>
-          {/* Add more links as needed */}
-        </div>
-      )}
     </nav>
   )
 }
